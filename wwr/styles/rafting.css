@@ -1,16 +1,15 @@
-/* Define CSS variables for the updated color scheme */
 :root {
-    --primary-color: #706C61; /* Primary color: Grayish Brown */
-    --secondary-color: #899E8B; /* Secondary color: Soft Green */
-    --accent-color-1: #99C5B5; /* Accent color 1: Soft Mint Green */
-    --accent-color-2: #AFECE7; /* Accent color 2: Light Aqua */
-    --background-color: #f4f4f4; /* Light grey for background */
-    --text-color: #333333; /* Dark text */
-    --heading-color: #4a473f; /* Darker version of primary for headings */
-    --link-color: #706C61; /* Primary color for links */
+    --primary-color: #706C61; 
+    --secondary-color: #899E8B; 
+    --accent-color-1: #99C5B5; 
+    --accent-color-2: #AFECE7; 
+    --background-color: #f4f4f4; 
+    --text-color: #333333; 
+    --heading-color: #4a473f; 
+    --link-color: #706C61;
 }
 
-/* General body styling */
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -22,7 +21,7 @@ body {
     margin-right: auto;
 }
 
-/* Headings styling */
+
 h1, h2 {
     font-family: 'Lora', serif;
     color: var(--heading-color);
@@ -39,7 +38,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Paragraph styling */
+
 p {
     font-size: 1.125rem;
     line-height: 1.6;
@@ -48,21 +47,19 @@ p {
 }
 
 
-/* Hero Section Styles */
-/* Hero Section Styles */
 .hero {
     position: relative;
     width: 100%;
-    height: 500px; /* You can adjust the height as per your design */
-    background-image: url('../images/rafting.jpg'); /* Set the background image */
-    background-size: cover; /* Ensures the background image covers the whole div */
-    background-position: center; /* Centers the background image */
-    color: white;
+    height: 500px; 
+    background-image: url('../images/rafting.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    color: white; 
     text-align: center;
     padding: 50px 0;
 }
 
-/* Add a semi-transparent overlay to improve readability */
+
 .hero::before {
     content: '';
     position: absolute;
@@ -70,47 +67,8 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4); /* Semi-transparent black overlay */
-    z-index: -1; /* Place the overlay behind the text */
-}
-
-/* Hero Section Styles */
-.hero {
-    position: relative;
-    width: 100%;
-    height: 500px; /* You can adjust the height as per your design */
-    background-image: url('../images/rafting.jpg'); /* Set the background image */
-    background-size: cover; /* Ensures the background image covers the whole div */
-    background-position: center; /* Centers the background image */
-    color: white; /* Set the text color to white for everything inside .hero */
-    text-align: center;
-    padding: 50px 0;
-}
-
-/* Add a semi-transparent overlay to improve readability */
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4); /* Semi-transparent black overlay */
-    z-index: -1; /* Place the overlay behind the text */
-}
-
-/* Hero title with border */
-/* Hero Section */
-.hero {
-    position: relative;
-    width: 100%;
-    height: 500px;
-    background-image: url('../images/rafting.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    padding: 50px 0;
+    background: rgba(0, 0, 0, 0.4); 
+    z-index: -1; 
 }
 
 .hero h1 {
@@ -118,46 +76,46 @@ p {
     margin: 0;
     padding: 10px;
     color: white;
-    background-color: rgba(0, 0, 0, 0.6); /* Black with transparency */
+    background-color: rgba(0, 0, 0, 0.6); 
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-/* Article Layout (Flexbox) */
+
 .hero article {
     position: absolute;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    display: flex; /* Use flexbox for side-by-side layout */
-    align-items: center; /* Vertically align image and text */
-    background-color: rgba(0, 0, 0, 0.6); /* Transparent black background */
+    display: block; 
+    background-color: rgba(0, 0, 0, 0.6); 
     padding: 20px;
     border-radius: 10px;
-    max-width: 600px; /* Control the maximum width */
-    text-align: left; /* Align text to the left */
-    gap: 15px; /* Add space between the image and text */
+    max-width: 600px; 
+    text-align: left; 
+    gap: 15px; 
 }
 
-/* Styling for the image inside the article */
+
 .hero article img {
-    width: 100px; /* Set the width of the image */
-    height: 100px; /* Set the height of the image */
-    border-radius: 50%; /* Make the image circular */
-    object-fit: cover; /* Ensure the image fits properly inside the circle */
+    float: right; 
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-left: 15px; 
 }
 
-/* Paragraph inside the article */
+
 .hero article p {
-    color: white; /* White text for visibility */
+    color: white; 
     margin: 0;
 }
 
 
-/* Social media link styles */
 .social-media a {
     display: inline-block;
     margin-right: 20px;
-    text-decoration: none; /* Remove underline */
+    text-decoration: none; 
 }
 
 .social-media img {
@@ -166,35 +124,12 @@ p {
     transition: transform 0.3s ease;
 }
 
-/* Hover effect on social media icons */
+
 .social-media a:hover img {
     transform: scale(1.1);
 }
 
 
-
-
-
-/* Social media link styles */
-.social-media a {
-    display: inline-block;
-    margin-right: 20px;
-    text-decoration: none; /* Remove underline */
-}
-
-.social-media img {
-    width: 40px;
-    height: 40px;
-    transition: transform 0.3s ease;
-}
-
-/* Hover effect on social media icons */
-.social-media a:hover img {
-    transform: scale(1.1);
-}
-
-/* Navigation link styles */
-/* Basic Horizontal Navigation */
 nav ul {
     margin: 0;
     padding: 0;
@@ -205,34 +140,29 @@ nav li {
 }
 
 nav a {
-    text-decoration: none; /* Optional: removes underline */
-    color: black; /* Optional: sets link text color */
+    text-decoration: none; 
+    color: black; 
 }
 
 
-/* Section styling */
 section {
     margin: 40px 0;
 }
 
-/* Section for "Adventure Awaits You!" Images */
+
 .rafting-images {
     display: flex;
-    flex-direction: column; /* Stack the images vertically */
-    gap: 20px; /* Add space between the images */
+    flex-direction: column; 
+    gap: 20px; 
 }
 
 .rafting-images img {
-    width: 100%; /* Make each image take up the full width */
+    width: 100%; 
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 
-
-
-
-/* Footer styling */
 footer {
     background-color: var(--primary-color);
     color: white;
@@ -247,20 +177,4 @@ footer p {
 
 footer .social-media {
     margin-top: 10px;
-}
-
-/* Mobile adjustments */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2rem;
-        top: 10%;
-    }
-
-    .hero article {
-        max-width: 90%;
-    }
-
-    .rafting-images img {
-        width: 45%;
-    }
 }

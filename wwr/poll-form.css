@@ -1,0 +1,136 @@
+/* Universal selector to reset margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Lora', serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Form styling */
+form {
+    width: 80%;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    display: grid;
+    grid-gap: 1rem;
+}
+
+/* Fieldset styling */
+fieldset {
+    display: grid;
+    grid-gap: 1rem;
+    border: none;
+    padding: 1rem;
+}
+
+legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Styling for all form elements */
+label, input, select, textarea, button {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Label styling */
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+/* Input, select, and textarea styling */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Checkbox styling */
+input[type="checkbox"] {
+    width: 1.5rem;
+    height: 1.5rem;
+    vertical-align: bottom;
+}
+
+/* Button styling */
+button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    margin-top: auto;
+}
+
+/* Divs around each label-input/select pair */
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+/* Column styling for the divs */
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin-bottom: 1rem;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 1rem;
+}
+
+/* Specific div class styles */
+.column1, .column2 {
+    display: grid;
+    grid-gap: 1rem;
+}
+

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact Us - Rafting Adventures</title>
+    <meta name="description" content="Get in touch with Rafting Adventures! Have questions about our services or need assistance? Reach out to us today." />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;700;1,400;700&family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+
+    <header>
+        <img src="images/sitelogo.jpg" alt="Rafting Site Logo" id="logo">
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+
+        <section class="contact-info">
+            <h2>Company Information</h2>
+            <p><strong>Address:</strong> 123 Adventure Lane, River City, 98765</p>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+            <p><strong>Email:</strong> contact@raftingadventures.com</p>
+
+            <div class="map">
+                <h3>Find Us Here:</h3>
+                
+                <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.280696142495!2d-74.00594148440108!3d40.71277577933013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259af85fd3037%3A0x89ab59207f47fe18!2sNew%20York%20Public%20Library!5e0!3m2!1sen!2sus!4v1632242490678!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+
+        <section class="employee-profiles">
+            <h2>Meet Our Team</h2>
+            <div class="profiles">
+                <div class="employee">
+                    <img src="images/employee1.jpg" alt="Employee 1">
+                    <p><strong>John Doe</strong> - Lead Rafting Guide</p>
+                </div>
+                <div class="employee">
+                    <img src="images/employee2.jpg" alt="Employee 2">
+                    <p><strong>Shienia Cynth</strong> - Operations Manager</p>
+                </div>
+                <div class="employee">
+                    <img src="images/employee3.jpg" alt="Employee 3">
+                    <p><strong>Sophia Lim</strong> - Safety Officer</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="/submit-form" method="POST">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="purpose">Purpose of Your Message</label>
+                <div>
+                    <label>
+                        <input type="radio" name="purpose" value="General Inquiry"> General Inquiry
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="Reservation Question"> Reservation Question
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="Website Suggestion"> Website Suggestion
+                    </label>
+                </div>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <label>
+                    <input type="checkbox" name="newsletter"> Please subscribe me to the monthly newsletter
+                </label>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 🚣‍♂️ Rafting Adventures 🚣‍♂️ Created by David Molina.</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com">
+                <img src="images/fb.png" alt="Facebook">
+            </a>
+            <a href="https://www.twitter.com">
+                <img src="images/twitter.png" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com">
+                <img src="images/ig.png" alt="Instagram">
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>

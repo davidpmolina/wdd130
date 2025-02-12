@@ -45,17 +45,20 @@ form {
     grid-gap: 1rem;
 }
 
-/* Fieldset styling */
+/* Fieldset styling for contact info and questions */
 fieldset {
-    display: grid;
-    grid-gap: 1rem;
-    border: none;
+    border: 2px solid #333;
     padding: 1rem;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin: 1rem 0;
 }
 
+/* Legend styling for section titles */
 legend {
     font-size: 1.2rem;
     font-weight: bold;
+    padding: 0 1rem;
 }
 
 /* Styling for all form elements */
@@ -65,7 +68,7 @@ label, input, select, textarea, button {
 
 /* Label styling */
 label {
-    text-align: right;
+    text-align: center;
     padding-right: 1rem;
 }
 
@@ -134,3 +137,14 @@ footer {
     grid-gap: 1rem;
 }
 
+/* Custom styling for contact info and questions */
+.contact-info, .questions {
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.contact-info input[type="text"],
+.contact-info input[type="email"],
+.questions textarea {
+    width: 100%;
+}

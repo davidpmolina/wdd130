@@ -462,11 +462,22 @@ nav a:hover {
 }
 
 .trip h3 {
-    font-size: 1.5rem;
-    color: var(--heading-color);
+    font-size: 1.25rem;  /* Increase font size for a bolder heading */
+    color: var(--text-color);  /* Use the main text color variable */
     margin-top: 15px;
     font-family: 'Lora', serif;
+    font-weight: 1000;  /* Make the text bold */
+    letter-spacing: 1px;  /* Add some space between letters for a more modern look */
+    text-transform: uppercase;  /* Capitalize the text for emphasis */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);  /* Add subtle text shadow for better readability */
+    transition: color 0.3s ease, transform 0.3s ease;  /* Smooth transition for hover effect */
 }
+
+.trip h3:hover {
+    color: var(rgb(80, 80, 80));  /* Change color on hover to match the brand's primary color */
+    transform: translateY(-5px);  /* Slight lift effect when hovering */
+}
+
 
 .trip p {
     font-size: 1rem;
@@ -484,6 +495,17 @@ nav a:hover {
         font-size: 2rem;
     }
 }
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+
 
 /*Trip Packages*/
 .trip-table {
